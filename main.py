@@ -1,8 +1,12 @@
 class Pessoa:
     def correr(self):
+        # processamento
+        # parse de dados
         print('Estou correndo')
 
     def falar(self):
+        # processamento
+        # update em banco de dados
         print('Estou falando')
 
     def comer(self):
