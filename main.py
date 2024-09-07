@@ -1,21 +1,10 @@
-class Pessoa:
-    def correr(self):
-        # processamento
-        # parse de dados
-        print('Estou correndo')
+from src.pessoa import Pessoa
+from src.acoes.falar import IniciarFala
+from src.acoes.correr import FazerCorrida
 
-    def falar(self):
-        # processamento
-        # update em banco de dados
-        print('Estou falando')
 
-    def comer(self):
-        print('Comendo uma pizza')
+pessoa1 = Pessoa(IniciarFala())
+pessoa1.realizarAcao()
 
-    def jogarFutebol(self):
-        print('*Jogar Futebol*')
-
-pessoa = Pessoa()
-pessoa.correr()
-pessoa.falar()
-pessoa.comer()
+pessoa2 = Pessoa(FazerCorrida())
+pessoa2.realizarAcao()
